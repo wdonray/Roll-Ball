@@ -38,6 +38,11 @@ public class PlayerControler : MonoBehaviour
             count += 1;
             SetCountText();
         }
+        else if (other.gameObject.CompareTag("Bad Guy"))
+        {
+            rb.gameObject.SetActive(false);
+            winText.text = "You Have Lost";
+        }
     }
     void SetCountText()
     {
