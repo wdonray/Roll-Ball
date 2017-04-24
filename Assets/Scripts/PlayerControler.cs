@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
+using UnityEngine.SceneManagement;
 
 public class PlayerControler : MonoBehaviour
 {
@@ -42,6 +44,8 @@ public class PlayerControler : MonoBehaviour
         {
             rb.gameObject.SetActive(false);
             winText.text = "You Have Lost";
+            SceneManager.LoadScene("MiniGamePlusSeek");
+            test();
         }
     }
     void SetCountText()
@@ -50,6 +54,13 @@ public class PlayerControler : MonoBehaviour
         if (count >= 8)
         {
             winText.text = "You Have Won";
+            SceneManager.LoadScene("MiniGamePlusSeek");
+            test();
         }
     }
+    IEnumerable test()
+    {
+        yield return new WaitForSeconds(15);
+    }
+
 }
