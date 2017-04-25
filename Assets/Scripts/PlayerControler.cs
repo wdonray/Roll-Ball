@@ -14,6 +14,7 @@ public class PlayerControler : MonoBehaviour
 
     private Rigidbody rb;
     private int count;
+    private bool pause = false;
 
     private void Start()
     {
@@ -34,7 +35,7 @@ public class PlayerControler : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         //Destroy(other.gameObject);
-        if (other.gameObject.CompareTag("Pick Up"))
+        if (other.gameObject.CompareTag("Pick Up") && pause == false)
         {
             other.gameObject.SetActive(false);
             count += 1;
@@ -42,25 +43,27 @@ public class PlayerControler : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Bad Guy"))
         {
-            rb.gameObject.SetActive(false);
+            //rb.gameObject.SetActive(false);
+            pause = true;
             winText.text = "You Have Lost";
-            SceneManager.LoadScene("MiniGamePlusSeek");
-            test();
+            StartCoroutine(Load(5, "MiniGamePlusSeek"));
         }
     }
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 8)
+        if (count == 8)
         {
             winText.text = "You Have Won";
-            SceneManager.LoadScene("MiniGamePlusSeek");
-            test();
+            StartCoroutine(Load(5, "MiniGamePlusSeek"));
         }
     }
-    IEnumerable test()
+    IEnumerator Load(int delay, string level)
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(level);
+        if (pause == true)
+            pause = false;
     }
 
 }

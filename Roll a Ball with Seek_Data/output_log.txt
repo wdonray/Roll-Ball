@@ -1,0 +1,35 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   21.21.13.7633
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.028 seconds
+Platform assembly: C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Donray\Documents\GitHub\Roll Ball\Builds\Roll a Ball with Seek_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.098152 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1524 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.785552 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 389.
+Total: 0.296305 ms (FindLiveObjects: 0.044363 ms CreateObjectMapping: 0.024167 ms MarkObjects: 0.216187 ms  DeleteObjects: 0.010594 ms)
+
