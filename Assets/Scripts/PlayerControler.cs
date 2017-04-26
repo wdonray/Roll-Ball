@@ -46,7 +46,7 @@ public class PlayerControler : MonoBehaviour
             //rb.gameObject.SetActive(false);
             pause = true;
             winText.text = "You Have Lost";
-            StartCoroutine(Load(5, "MiniGamePlusSeek"));
+            StartCoroutine(Load(5, "RollBallFinal"));
         }
     }
     void SetCountText()
@@ -55,7 +55,7 @@ public class PlayerControler : MonoBehaviour
         if (count == 8)
         {
             winText.text = "You Have Won";
-            StartCoroutine(Load(5, "MiniGamePlusSeek"));
+            StartCoroutine(Load(5, "RollBallFinal"));
         }
     }
     IEnumerator Load(int delay, string level)
