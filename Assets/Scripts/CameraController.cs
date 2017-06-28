@@ -7,13 +7,16 @@ public class CameraController : MonoBehaviour {
 
     private Vector3 offset;
 
-	// Use this for initialization
-	void Start () {
+    public int CameraSpeed;
+
+    void Start()
+    {
         offset = transform.position - player.transform.position;
-	}
-	
-	// Update is called once per frame
-	void LateUpdate () {
-        transform.position = player.transform.position + offset;
+    }
+	// Use this for initialization
+	void Update ()
+    {
+        var b = player.transform.position + offset;
+        transform.position = Vector3.Lerp(transform.position, b, Time.deltaTime * CameraSpeed);
 	}
 }

@@ -41,12 +41,16 @@ public class PlayerControler : MonoBehaviour
             count += 1;
             SetCountText();
         }
-        else if (other.gameObject.CompareTag("Bad Guy"))
+
+    }
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Bad Guy"))
         {
             //rb.gameObject.SetActive(false);
             pause = true;
             winText.text = "You Have Lost";
-            StartCoroutine(Load(5, "RollBallFinal"));
+            StartCoroutine(Load(3, "MiniGamePlusSeek"));
         }
     }
     void SetCountText()
@@ -55,7 +59,7 @@ public class PlayerControler : MonoBehaviour
         if (count == 8)
         {
             winText.text = "You Have Won";
-            StartCoroutine(Load(5, "RollBallFinal"));
+            StartCoroutine(Load(3, "MiniGamePlusSeek"));
         }
     }
     IEnumerator Load(int delay, string level)
